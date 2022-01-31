@@ -1,5 +1,5 @@
 {% set name = "pypher" %}
-{% set version = "0.6.4" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypher-{{ version }}.tar.gz
-  sha256: d8c7e2364295151861fea3276e2ae156cd02013acebb9b794ad73b0f7b5df6ed
+  sha256: 48678d73f0dcb0aea72e8f54e8c7b9b42ca6a6f70d6f6feb28b40027c7523f89
 
 build:
   entry_points:
