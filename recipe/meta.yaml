@@ -15,14 +15,14 @@ build:
     - addpixscl = pypher.addpixscl:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - python >=3.6
   run:
-    - astropy >=0.4
+    - astropy >=2.0
     - numpy >=1.7.2
     - python >=3.6
     - scipy >=0.9
