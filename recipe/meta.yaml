@@ -22,7 +22,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - astropy >=0.4
+    - astropy >=2.0
     - numpy >=1.7.2
     - python >=3.6
     - scipy >=0.9
