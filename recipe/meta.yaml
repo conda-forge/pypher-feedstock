@@ -1,5 +1,5 @@
 {% set name = "pypher" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypher-{{ version }}.tar.gz
-  sha256: fc11caaf6cf15b4b31ef496359b2fb8aa9faf8a9b3da6ceca6fafbff78e1a9f4
+  sha256: 68c5f6da5b12980263cc0ee247ad9706a67dd27392a8a97c3e42da23180bfc63
 
 build:
   entry_points:
@@ -15,11 +15,12 @@ build:
     - addpixscl = pypher.addpixscl:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - pip
+    - setuptools
     - python >=3.6
   run:
     - astropy >=2.0
