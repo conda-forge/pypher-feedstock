@@ -20,6 +20,7 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python >=3.6
   run:
     - astropy >=2.0
