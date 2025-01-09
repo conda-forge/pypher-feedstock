@@ -23,7 +23,7 @@ requirements:
     - setuptools
     - python {{ python_min }}
   run:
-    - astropy >=2.0
+    - astropy-base >=2.0
     - numpy >=1.7.2
     - python >={{ python_min }}
     - scipy >=0.9
